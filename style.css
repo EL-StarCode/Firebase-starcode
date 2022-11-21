@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h3 {
+    margin: 0;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 0px;
+    background: linear-gradient(302deg, rgb(24, 24, 24) 0%, rgba(0, 0, 0, 1) 38%);
+    color: white;
+    overflow: hidden;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: radial-gradient(circle at 54% 52%, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.logo {
+    width: min(50vw, 170px);
+    padding-top: 30px;
+}
+
+.showcase {
+    width: min(600px, 50vw);
+    overflow: hidden;
+    height: min(100px, 20vh + 20px);
+    position: absolute;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.title {
+    width: min(600px, 50vw);
+    height: 100%;
+    font-size: clamp(1rem, 9vw, 7rem);
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 60px;
+    color: #fff;
+    background: #000;
+    mix-blend-mode: multiply;
+}
+
+.Ctcanchor {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.achievement {
+    /* gestion du parallax */
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    background-image: url(./src/images/woods.jpg);
+
+}
+
+.realisations {
+    margin: 0;
+    padding: 60px 60px 20px 20px;
+    text-align: end;
+    font-size: max(5vw, 2em, 2.5rem);
+
+}
+
+#cards {
+    padding: 20px;
+    height: 100%;
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: 300px;
+}
+
+.card {
+    margin: 0;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.cardname {
+    position: absolute;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 0 50px 50px 0;
+    background-color: white;
+    height: 50px;
+    width: 250px;
+    color: #000;
+    left: -10px;
+    top: 20px;
+}
+
+.rgb::after {
+    content: "";
+    background: linear-gradient(45deg,
+            #000000 0%,
+
+            #505050 25%,
+
+            #ffffff 50%,
+
+            #838383 75%,
+
+            #000000 100%) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(8px);
+    transform: translateZ(-1px);
+    /*or z-index */
+    animation: rgb 6s linear infinite;
+}
+
+.about {
+    height: 300px;
+    background: linear-gradient(302deg, rgba(53, 53, 53, 1) 0%, rgba(0, 0, 0, 1) 38%);
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.js-tilt-glare {
+    border-radius: 18px;
+}
+
+@media (max-width: 1350px) {
+    .showcase {
+        display: none;
+    }
+
+    #cards {
+        /* grid */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #cards {
+        /* grid */
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px;
+    }
+}
