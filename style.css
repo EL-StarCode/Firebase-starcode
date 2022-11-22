@@ -87,10 +87,11 @@ header {
     padding: 60px 60px 20px 20px;
     text-align: end;
     font-size: max(5vw, 2em, 2.5rem);
+    text-shadow: -4px -4px 15px black;
 
 }
 
-#cards {
+.cards {
     padding: 50px;
     height: 100%;
     /* grid */
@@ -143,11 +144,130 @@ header {
     animation: rgb 6s linear infinite;
 }
 
-.about {
+.Starinfo {
+    padding: 50px;
+    height: 100%;
+    background: linear-gradient(302deg, rgba(53, 53, 53, 1) 0%, rgba(0, 0, 0, 1) 38%);
+    color: white;
+}
+
+.info-title {
+    margin: 0;
+    padding: 60px 60px 20px 20px;
+    text-align: start;
+    font-size: max(5vw, 2em, 2.5rem);
+    text-shadow: -4px -4px 15px white;
+}
+
+.info-txt1 {
+    font-size: max(1vw, 1.5em, 1.5rem);
+    text-align: start;
+    margin-right: 40%;
+    margin-bottom: 80px;
+}
+
+.info-txt2 {
+    font-size: max(1vw, 1.5em, 1.5rem);
+    text-align: end;
+    margin-left: 40%;
+    margin-top: 80px;
+}
+
+#about {
     color: white;
     background: linear-gradient(302deg, rgba(53, 53, 53, 1) 0%, rgba(0, 0, 0, 1) 38%);
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------------------Button hover animation- NTP idea CODEPEN------------------------------------------------------------------ */
+
+.wrapper-contact {
+    margin: 80px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.reseau {
+    padding: 0.6em 2em;
+    margin: 15px 15px 15px 15px;
+    border: none;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.reseau:hover {
+    scale: 1.1;
+}
+
+.reseau:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FEFEFE,
+            #BFBFBF,
+            #868686,
+            #5D5D5D,
+            #868686,
+            #BFBFBF,
+            #FEFEFE);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+
+}
+
+
+.reseau:hover:before {
+    opacity: 1;
+
+}
+
+.reseau:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+
+}
+
+@keyframes glowingbn5 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 @keyframes rgb {
@@ -173,7 +293,7 @@ header {
         display: none;
     }
 
-    #cards {
+    .cards {
         /* grid */
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -183,7 +303,7 @@ header {
 
 @media (max-width: 1000px) {
 
-    #cards {
+    .cards {
         /* grid */
         grid-template-columns: 1fr;
         gap: 40px;
