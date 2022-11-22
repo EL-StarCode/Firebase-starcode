@@ -82,6 +82,16 @@ header {
 
 }
 
+.achievement2 {
+    /* gestion du parallax */
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    background-image: url('./src/images/sugarloaf-rock.jpg');
+
+}
+
 .realisations {
     margin: 0;
     padding: 60px 60px 20px 20px;
@@ -147,7 +157,6 @@ header {
     padding: 60px 60px 20px 20px;
     text-align: start;
     font-size: max(5vw, 2em, 2.5rem);
-    text-shadow: -4px -4px 15px white;
 }
 
 .info-txt1 {
