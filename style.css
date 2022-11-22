@@ -270,6 +270,14 @@ header {
 
 }
 
+.reseau:active {
+    transition: all 0.3s ease-in-out;
+    scale: 0.8;
+}
+
+.reseau:active:after {
+    background: transparent;
+}
 
 .reseau:hover:before {
     opacity: 1;
