@@ -120,6 +120,21 @@ header {
     transform: perspective(1000px);
 }
 
+.bistro {
+    background-image: url('./src/images/bistro.jpg');
+    background-size: cover;
+}
+
+.bijoux {
+    background-image: url('./src/images/jewellery.jpg');
+    background-size: cover;
+}
+
+.paysage {
+    background-image: url('./src/images/tree.jpg');
+    background-size: cover;
+}
+
 .cardname {
     position: absolute;
     text-align: center;
@@ -256,23 +271,6 @@ header {
 
 }
 
-@keyframes glowingbn5 {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-
-    /* flex-direction: column;
-    align-items: center; */
-}
-
 /* -------------------------------------Button hover animation- NTP idea CODEPEN------------------------------------------------------------------ */
 
 .wrapper-contact {
@@ -324,28 +322,7 @@ header {
 
 }
 
-@keyframes glowingbn5 {
-    0% {
-        background-position: 0 0;
-    }
 
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-
-.reseau:active {
-    transition: all 0.3s ease-in-out;
-    scale: 0.8;
-}
-
-.reseau:active:after {
-    background: transparent;
-}
 
 .reseau:hover:before {
     opacity: 1;
@@ -370,6 +347,37 @@ header {
 
 .js-tilt-glare {
     border-radius: 18px;
+}
+
+@keyframes glowingbn5 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+    /* flex-direction: column;
+    align-items: center; */
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media(max-width: 1350px) {
