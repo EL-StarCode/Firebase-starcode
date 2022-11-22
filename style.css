@@ -36,7 +36,7 @@ header {
     overflow: hidden;
     height: min(100px, 20vh + 20px);
     position: absolute;
-    left: 30%;
+    left: 32.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,12 +54,11 @@ header {
 }
 
 .title {
-    width: min(600px, 50vw);
-    height: 100%;
+    overflow: hidden;
     font-size: clamp(1rem, 9vw, 7rem);
     font-weight: 700;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     color: #fff;
     background: #000;
     mix-blend-mode: multiply;
