@@ -299,11 +299,6 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-/* .reseau:hover {
-    transition: all 0.5s ease-in-out;
-    scale: 1.2;
-} */
-
 .reseau:before {
     content: "";
     background: linear-gradient(45deg,
@@ -352,10 +347,10 @@ header {
     background: transparent;
 }
 
-/* .reseau:hover:before {
+.reseau:hover:before {
     opacity: 1;
 
-} */
+}
 
 .reseau:after {
     z-index: -1;
