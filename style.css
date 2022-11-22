@@ -92,6 +92,21 @@ header {
 
 }
 
+.wordpress {
+    background-image: url('./src/images/wordpress.jpg');
+    background-size: cover;
+}
+
+.react {
+    background-image: url('./src/images/code.jpg');
+    background-size: cover;
+}
+
+.mobile {
+    background-image: url('./src/images/monitor.jpg');
+    background-size: cover;
+}
+
 .realisations {
     margin: 0;
     padding: 60px 60px 20px 20px;
