@@ -59,7 +59,7 @@ header {
     font-size: clamp(1rem, 9vw, 7rem);
     font-weight: 700;
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     color: #fff;
     background: #000;
     mix-blend-mode: multiply;
