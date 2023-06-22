@@ -72,7 +72,7 @@ header {
 
 }
 
-.achievement {
+.shortcode {
     /* gestion du parallax */
     background-attachment: fixed;
     background-size: cover;
@@ -80,31 +80,6 @@ header {
     color: white;
     background-image: url('./src/images/woods.jpg');
 
-}
-
-.achievement2 {
-    /* gestion du parallax */
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-    color: white;
-    background-image: url('./src/images/sugarloaf-rock.jpg');
-
-}
-
-.wordpress {
-    background-image: url('./src/images/wordpress.jpg');
-    background-size: cover;
-}
-
-.react {
-    background-image: url('./src/images/code.jpg');
-    background-size: cover;
-}
-
-.mobile {
-    background-image: url('./src/images/monitor.jpg');
-    background-size: cover;
 }
 
 .realisations {
@@ -136,20 +111,16 @@ header {
 
 }
 
-.chatdcoiff {
-    background-image: url('./src/images/chatdcoiff.png');
+.html {
+    background-image: url('./src/images/code.jpg');
     background-size: cover;
 
 }
 
-.bijoux {
-    background-image: url('./src/images/jewellery.jpg');
+.css {
+    background-image: url('./src/images/code.jpg');
     background-size: cover;
-}
 
-.paysage {
-    background-image: url('./src/images/tree.jpg');
-    background-size: cover;
 }
 
 .cardname {
@@ -176,34 +147,6 @@ header {
     transform: translateZ(-1px);
     /*or z-index */
     animation: rgb 6s linear infinite;
-}
-
-.Starinfo {
-    padding: 50px;
-    height: 100%;
-    background: linear-gradient(302deg, rgba(53, 53, 53, 1) 0%, rgba(0, 0, 0, 1) 38%);
-    color: white;
-}
-
-.info-title {
-    margin: 0;
-    padding: 60px 60px 20px 20px;
-    text-align: start;
-    font-size: max(5vw, 2em, 2.5rem);
-}
-
-.info-txt1 {
-    font-size: max(1vw, 1.5em, 1.5rem);
-    text-align: start;
-    margin-right: 40%;
-    margin-bottom: 80px;
-}
-
-.info-txt2 {
-    font-size: max(1vw, 1.5em, 1.5rem);
-    text-align: end;
-    margin-left: 40%;
-    margin-top: 80px;
 }
 
 #about {

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54079af751.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="list.css">
+    <title>Starcode</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./src/images/Starcode.png" alt="Starcode logo" class="logo">
+
+        <div class="showcase">
+            <video src="./src/mp4/Galaxie.mp4" autoplay loop muted>
+
+            </video>
+            <h1 class="title">STARCODE</h1>
+        </div>
+
+        <div class="link-header">
+            <a href="#about" class="Ctcanchor"><i class="fa-regular fa-address-card"></i></a>
+            <a href="index.html" class="Ctcanchor"><i class="fa-solid fa-share-from-square"></i></a>
+        </div>
+
+
+    </header>
+
+    <section class="shortcode">
+        <h2 class="realisations">Star-code,</h2>
+
+
+        <div class="cards">
+            <div class="card rgb css">
+                <h3 class="cardname">CSS - how to use clamp()</h3>
+            </div>
+
+            <div class="card rgb css">
+                <h3 class="cardname">CSS - min() max & clamp()</h3>
+            </div>
+
+            <div class="card rgb css">
+                <h3 class="cardname">CSS - Dying neon</h3>
+            </div>
+
+            <div class="card rgb css">
+                <h3 class="cardname">CSS - Glitch-text</h3>
+            </div>
+            <div class="card rgb css">
+                <h3 class="cardname">CSS - Infinite scrolling text</h3>
+            </div>
+            <div class="card rgb css">
+                <h3 class="cardname">CSS - Parallax allinone</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="about">
+        <div class="wrapper-contact">
+            <a href="mailto:elstarcode@gmail.com" class="reseau email">
+                elstarcode@gmail.com</a>
+            <a href="" class="reseau twitter">
+                Twitter
+            </a>
+            <a href="https://discord.gg/RC8agMmmAV" class="reseau discord">
+                Discord
+            </a>
+            <a href="" class="reseau instagram">
+                Instagram
+            </a>
+        </div>
+
+        <div class="mentions-legales">
+            <p>Mentions-légales</p>
+        </div>
+
+    </footer>
+
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            glare: true,
+            reverse: true,
+            "max-glare": 0.15
+        });
+    </script>
+</body>
+
+</html>
