@@ -27,8 +27,8 @@ header {
 }
 
 .logo {
-    width: min(50vw, 170px);
-    padding-top: 30px;
+    width: min(50vw, 130px);
+    padding: 30px;
 }
 
 .showcase {
@@ -78,7 +78,7 @@ header {
     background-size: cover;
     overflow: hidden;
     color: white;
-    background-image: url('./src/images/star-trails-1846734_1920.jpg');
+    background-image: url('./src/images/v627-aew-41-technologybackground.jpg');
 
 }
 
@@ -88,7 +88,7 @@ header {
     background-size: cover;
     overflow: hidden;
     color: white;
-    background-image: url('./src/images/sugarloaf-rock.jpg');
+    background-image: url('./src/images/sl_031420_28950_04.jpg');
 
 }
 

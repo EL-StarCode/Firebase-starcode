@@ -27,8 +27,8 @@ header {
 }
 
 .logo {
-    width: min(50vw, 170px);
-    padding-top: 30px;
+    width: min(50vw, 130px);
+    padding: 30px;
 }
 
 .showcase {
