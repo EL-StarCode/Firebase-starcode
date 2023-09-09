@@ -142,13 +142,13 @@ header {
 
 }
 
-.ad {
+.alexandra-diguet {
     background-image: url('./src/images/alexandra-diguet.fr.png');
     background-size: cover;
 }
 
 .paysage {
-    background-image: url('./src/images/tree.jpg');
+    background-image: url('./src/images/woods.jpg');
     background-size: cover;
 }
 
